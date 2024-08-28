@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script src="script.js" type="module" defer></script>
   <title>Decodificador de Texto</title>
 </head>
 <body>
@@ -15,17 +19,20 @@
     <section>
       <textarea class="mensagem" cols="38" rows="4" placeholder="Digite seu texto"></textarea>
 
-      <span>Apenas letras minúsculas e sem acento.</span>
-      <div>
+      <span>
+        <img src="./assets/icon-alert.svg" alt="">
+        Apenas letras minúsculas e sem acento.
+      </span>
+      <div class="buttons">
         <button>Criptografar</button>
         <button>Descriptografar</button>
       </div>
     </section>
-    <section>
+    <div class="textarea-criptografada">
       <h2>Nenhuma mensagem encontrada</h2>
       <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
       <textarea class="mensagem-criptografada" cols="38" rows="4"></textarea>
-    </section>
+    </div>
   </main>
 </body>
 </html>

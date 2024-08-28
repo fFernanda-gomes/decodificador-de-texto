@@ -1,0 +1,120 @@
+:root {
+  /* Dark Blue */
+  --dark-blue-100: #609ED4;
+  --dark-blue-200: #356EA9;
+  --dark-blue-300: #0A3871;
+  --dark-blue-400: #072B61;
+  --dark-blue-500: #052051;
+
+  /* Light Blue */
+  --light-blue-100: #F3F5FC;
+  --light-blue-200: #EFF1FA;
+  --light-blue-300: #E9ECF8;
+  --light-blue-400: #AAB2D5;
+  --light-blue-500: #757FB2;
+
+  /* Gray */
+  --gray-100: #CED4DA;
+  --gray-200: #ADB5BD;
+  --gray-300: #868E96;
+  --gray-400: #495057;
+  --gray-500: #343A40;
+
+  --white: #FFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 1.5rem 1rem;
+  background: var(--light-blue-100);
+}
+
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.mensagem {
+  color: var(--dark-blue-300);
+  margin-block: 3.5rem 5rem;
+  font-size: 2rem;
+  max-width: 19rem;
+  height: calc(100vh - 30rem);
+}
+
+.mensagem::placeholder {
+  color: var(--dark-blue-300);
+}
+
+span {
+  color: var(--gray-500);
+  font-size: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.buttons button {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--dark-blue-300);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.buttons button:nth-child(1) {
+  background: var(--dark-blue-300);
+  color: var(--white);
+}
+
+.buttons button:nth-child(2) {
+  background: var(--white);
+  color: var(--dark-blue-300);
+}
+
+.textarea-criptografada {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  background: var(--white);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.textarea-criptografada h2 {
+  color: var(--gray-500);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.textarea-criptografada p {
+  color: var(--gray-400);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.mensagem-criptografada {
+  display: none;
+}
